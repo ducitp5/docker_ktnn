@@ -1,0 +1,67 @@
+2023-06-23 01:43:01.820 INFO  (main) [   ] o.e.j.u.log Logging initialized @5768ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-06-23 01:43:02.123 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.19+7
+2023-06-23 01:43:02.137 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///opt/solr-8.11.2/server/contexts/] at interval 0
+2023-06-23 01:43:02.605 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2023-06-23 01:43:02.618 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2023-06-23 01:43:02.618 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2023-06-23 01:43:02.622 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2023-06-23 01:43:02.729 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2023-06-23 01:43:02.736 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.2
+2023-06-23 01:43:02.736 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2023-06-23 01:43:02.736 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /opt/solr
+2023-06-23 01:43:02.736 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2023-06-23T01:43:02.736724Z
+2023-06-23 01:43:02.766 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /var/solr/data
+2023-06-23 01:43:02.767 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /var/solr/data/solr.xml
+2023-06-23 01:43:02.909 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@792b749c, but no JMX reporters were configured - adding default JMX reporter.
+2023-06-23 01:43:03.540 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2023-06-23 01:43:03.764 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@6f4ade6e[provider=null,keyStore=null,trustStore=null]
+2023-06-23 01:43:03.765 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@6f4ade6e[provider=null,keyStore=null,trustStore=null]
+2023-06-23 01:43:03.993 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@608bc8f8[provider=null,keyStore=null,trustStore=null]
+2023-06-23 01:43:03.993 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@608bc8f8[provider=null,keyStore=null,trustStore=null]
+2023-06-23 01:43:04.065 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2023-06-23 01:43:04.210 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2023-06-23 01:43:04.227 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2023-06-23 01:43:04.299 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@792b749c
+2023-06-23 01:43:04.299 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@792b749c
+2023-06-23 01:43:04.300 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@792b749c
+2023-06-23 01:43:04.715 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /var/solr/data
+2023-06-23 01:43:04.716 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [test]
+2023-06-23 01:43:04.785 INFO  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.2
+2023-06-23 01:43:04.803 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1992eaf4{/solr,file:///opt/solr-8.11.2/server/solr-webapp/webapp/,AVAILABLE}{/opt/solr-8.11.2/server/solr-webapp/webapp}
+2023-06-23 01:43:04.820 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@52de51b6{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2023-06-23 01:43:04.820 INFO  (main) [   ] o.e.j.s.Server Started @8774ms
+2023-06-23 01:43:04.841 WARN  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2023-06-23 01:43:04.904 INFO  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.s.IndexSchema Schema name=default-config
+2023-06-23 01:43:05.627 INFO  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-06-23 01:43:05.771 INFO  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.c.CoreContainer Creating SolrCore 'test' using configuration from instancedir /var/solr/data/test, trusted=true
+2023-06-23 01:43:05.808 INFO  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.test' (registry 'solr.core.test') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@792b749c
+2023-06-23 01:43:05.823 INFO  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.c.SolrCore [[test] ] Opening new SolrCore at [/var/solr/data/test], dataDir=[/var/solr/data/test/data/]
+2023-06-23 01:43:06.637 INFO  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-06-23 01:43:06.638 INFO  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-06-23 01:43:06.653 INFO  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-06-23 01:43:06.653 INFO  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-06-23 01:43:06.846 INFO  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/test/conf
+2023-06-23 01:43:06.863 INFO  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2023-06-23 01:43:06.869 INFO  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2023-06-23 01:43:06.880 INFO  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2023-06-23 01:43:06.884 INFO  (coreLoadExecutor-13-thread-1) [   x:test] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1769455838176477184
+2023-06-23 01:43:06.888 INFO  (searcherExecutor-15-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-06-23 01:43:06.888 INFO  (searcherExecutor-15-thread-1-processing-x:test) [   x:test] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-06-23 01:43:06.901 INFO  (searcherExecutor-15-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test]  Registered new searcher autowarm time: 0 ms
+2023-06-23 03:07:02.225 INFO  (qtp33233312-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687489622149} status=0 QTime=14
+2023-06-23 03:07:02.234 INFO  (qtp33233312-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687489622150} status=0 QTime=23
+2023-06-23 03:07:02.246 INFO  (qtp33233312-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687489622150} status=0 QTime=33
+2023-06-23 03:11:17.068 INFO  (JettyShutdownThread) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@52de51b6{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2023-06-23 03:11:17.068 INFO  (JettyShutdownThread) [   ] o.e.j.s.session node0 Stopped scavenging
+2023-06-23 03:11:17.070 INFO  (JettyShutdownThread) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=2029709919
+2023-06-23 03:11:17.074 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.c.SolrCore [test]  CLOSING SolrCore org.apache.solr.core.SolrCore@745c9e3b
+2023-06-23 03:11:17.074 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.test tag=SolrCore@745c9e3b
+2023-06-23 03:11:17.077 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5eda6341: rootName = null, domain = solr.core.test, service url = null, agent id = null] for registry solr.core.test/com.codahale.metrics.MetricRegistry@6ec85445
+2023-06-23 03:11:17.103 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2023-06-23 03:11:17.127 INFO  (JettyShutdownThread) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2023-06-23 03:11:17.127 INFO  (JettyShutdownThread) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@17dd671f: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@2cf5cd6f
+2023-06-23 03:11:17.130 INFO  (JettyShutdownThread) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2023-06-23 03:11:17.130 INFO  (JettyShutdownThread) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@30c1da48: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@eaf869a
+2023-06-23 03:11:17.132 INFO  (JettyShutdownThread) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2023-06-23 03:11:17.132 INFO  (JettyShutdownThread) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@43a65cd8: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@545267d8
+2023-06-23 03:11:17.155 INFO  (JettyShutdownThread) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1992eaf4{/solr,null,STOPPED}{/opt/solr-8.11.2/server/solr-webapp/webapp}
